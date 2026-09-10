@@ -1,3 +1,11 @@
+main:
+#these are test values for the code
+    li x10, 10      # Load 10 into g (x10)
+    li x11, 5       # Load 5 into h (x11)
+    li x12, 4       # Load 4 into i (x12)
+    li x13, 2       # Load 2 into j (x13)
+    
+    jal ra, leaf
 leaf:
     addi sp, sp, -12      # reserve 3 words (12 bytes)
     sw   x18, 0(sp)       # save x18
